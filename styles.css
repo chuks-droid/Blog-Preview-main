@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+    --Yellow: hsl(47, 88%, 63%);
+
+    --Font-size-paragraph: 16px;
+}
+body{
+    font-family: "Figtree", sans-serif;
+    background-color: var(--Yellow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100dvw;
+    height: 100dvh;
+}
+.container{
+    width: 20.5em;
+    height: 31em;
+    background-color: var(--White);
+    padding: 1.5em;
+    border-radius: 1em;
+    border: 1px solid var(--Black);
+    box-shadow: 7px 7px 1px var(--Black);
+}
+
+.illustration-box{
+    background: url(./assets/images/illustration-article.svg) no-repeat;
+    background-size: cover;
+    width: 17.5em;
+    height: 13em;
+    border-radius: 0.5em;
+   margin-bottom: 1.5em;
+
+}
+
+.learning-yellow-bg{
+    background-color: var(--Yellow);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    padding-left: 0.8em;
+    font-weight: 800;
+    font-size: 0.8em;
+}
+.published-date{
+    margin: 1.5em 0 1em 0;
+    font-size: 0.8em;
+}
+h1{
+    font-size: 1.28em;
+    margin-bottom: 1em;
+    font-weight: 800;
+}
+p{
+    margin-bottom: 1.5em;
+    color: var(--Grey);
+    font-size: 0.89rem;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-weight: 800;
+    font-size: 0.8rem;
+}
+.profile-pix{
+    width: 2.5em;
+}
+footer{
+    margin-top: 1em;
+    background-color: rgba(255, 255, 0, 0.226);
+    padding: 1em;
+    font-weight: 800;
+}
+@media(width >= 1440px){
+    .container{
+        width: 23em;
+        height: 32em;
+    }
+    .illustration-box{
+        width: 20em;
+        height: 13em;
+    }
+    p{
+        margin-bottom: 1.5em;
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 1.5em;
+        margin-bottom: 1em;
+        font-weight: 800;
+    }
+}
